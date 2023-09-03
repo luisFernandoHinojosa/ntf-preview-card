@@ -59,8 +59,33 @@ img, svg{
     border-radius: 20px;
 }
 
+.contenedor-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image-equi{
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+}
+
+.image-equi:hover{
+    opacity: 0.5
+}
+
+.image-transition{
+    position: absolute;
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+
+.contenedor-img:hover .image-transition{
+    opacity: 1;
+    visibility: visible;
 }
 
 .title{
